@@ -1,1 +1,115 @@
-# tayyarknoyy
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Winterfell Semipro Unfair</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0a1931;
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      height: 56px;
+      background-color: #112d5e;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+    }
+
+    header .logo {
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: 2px;
+      user-select: none;
+    }
+
+    .title-section {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #ffffff;
+      background-color: #1a2a4f;
+      padding: 16px 24px;
+      border-radius: 10px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    button#memberListBtn {
+      background-color: #1860f0;
+      border: none;
+      border-radius: 8px;
+      padding: 14px 56px;
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 8px 16px rgb(24 96 240 / 0.3);
+      user-select: none;
+    }
+
+    button#memberListBtn:hover {
+      background-color: #1a71ff;
+      box-shadow: 0 10px 20px rgb(26 113 255 / 0.5);
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      color: #888;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">UFSMP</div>
+  </header>
+
+  <div class="title-section">
+    Winterfell Semipro Unfair
+  </div>
+
+  <main>
+    <button id="memberListBtn" onclick="goToMemberList()">Member List</button>
+  </main>
+
+  <footer>
+    Power
+  </footer>
+
+  <script>
+    function goToMemberList() {
+      window.location.href = 'member-list.html'; // เปลี่ยนตามชื่อไฟล์จริง
+    }
+  </script>
+</body>
+</html>
